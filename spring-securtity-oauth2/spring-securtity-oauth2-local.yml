@@ -8,8 +8,9 @@ eureka:
     non-secure-port: ${server.port} #被调用的单元服务需要指定服务端口
 spring:
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
+#    type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/alan-oauth?useUnicode=true&amp;\
            characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
     username: root
     password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
