@@ -6,8 +6,6 @@ eureka:
     prefer-ip-address: true
     instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
     non-secure-port: ${server.port} #被调用的单元服务需要指定服务端口
-    status-page-url-path: ${server.context-path}
-    health-check-url-path: ${server.context-path}
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
